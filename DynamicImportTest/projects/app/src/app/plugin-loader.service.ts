@@ -21,7 +21,7 @@ export class PluginLoaderService {
     // Although in trying this, we get an error that the files could not be found
     try {
       console.log('Trying to load dynamic module...');
-      await import(`/dist/${moduleName}/fesm2022/${moduleName}.mjs`).then((m) =>
+      await import(`dist/${moduleName}/fesm2022/${moduleName}.mjs`).then((m) =>
         console.log(m)
       );
     } finally {
